@@ -5,6 +5,7 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import WarningIcon from './icons/IconWarning.vue'
 </script>
 
 <template>
@@ -84,5 +85,15 @@ import SupportIcon from './icons/IconSupport.vue'
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <WarningIcon />
+    </template>
+    <template #heading>Warning</template>
+
+    Don't click
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">this</a>.
   </WelcomeItem>
 </template>
